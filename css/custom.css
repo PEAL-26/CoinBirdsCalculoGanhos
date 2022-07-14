@@ -1,0 +1,57 @@
+.block_pot {
+    background: linear-gradient(to top, #FDF2D7 0%, #fff5e4 100%) repeat scroll 0% 0% transparent;
+    background: -webkit-linear-gradient(top, #FDF2D7 0%, #fff5e4 100%);
+    background: -moz-linear-gradient(top, #FDF2D7 0%, #fff5e4 100%);
+    background: -o-linear-gradient(top, #FDF2D7 0%, #fff5e4 100%);
+    background: -ms-linear-gradient(top, #FDF2D7 0%, #fff5e4 100%);
+    position: relative;
+    margin: 1em 0px 1em 15px;
+    border: 1px solid #CCB98C;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    font-size: 9px;
+    height: 206px;
+    /*width: 264px;*/
+    display: inline-block;
+    border: 1px solid #a9783b66;
+    box-shadow: inset 0 0 1px #0000006b;
+}
+
+.bird-title {
+    text-align: center;
+    display: block;
+    padding: 10px 0 3px 0;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.block_img_pot {
+    border: 1px solid rgb(204, 185, 140);
+    background: #F6E7BB;
+    border-radius: 90px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+.block_img_pot img {
+    width: 64px;
+    margin-top: -2px;
+    margin-left: -8px;
+}
+
+.block_ul_pot {
+    margin-top: 8px;
+    padding: 0px;
+    padding-left: 14px;
+}
+
+tr.negrito {font-weight:bold;}

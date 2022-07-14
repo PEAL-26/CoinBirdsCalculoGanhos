@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Cálculo de Lucros: Coin-Birds.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/sweetalert2.min.css">
+	<link rel="icon" type="image/png" href="images/rei.png">
+</head>
+
+<body>
+
+	<div class="container" id="passaros">
+		<button value="tetete">
+			tetetet
+		</button>
+	</div>
+
+	<div class="container" id="">
+
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-center mb-5">
+				<h1 class="heading-section">Cálculo de Lucros: Coin-Birds.com</h1>
+			</div>
+		</div>
+
+		<div class="col-sm-8 row ">
+
+			<div class="col-sm-12 row">
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Bege</b></div>
+					<div class="block_img_pot">
+						<img src="images/bege.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="bege_comprado" id="bege_comprado" value="112"></b>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Verde</b></div>
+					<div class="block_img_pot">
+						<img src="images/verde.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="verde_comprado" id="verde_comprado" value="170"></b>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Amarelo</b></div>
+					<div class="block_img_pot">
+						<img src="images/amarelo.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="amarelo__comprado" id="amarelo_comprado"
+								value="29"></b>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Castanho</b></div>
+					<div class="block_img_pot">
+						<img src="images/castanho.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="castanho_comprado" id="castanho_comprado"
+								value="12"></b></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-sm-12 row">
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Azul</b></div>
+					<div class="block_img_pot">
+						<img src="images/azul.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="azul_comprado" id="azul_comprado" value="0"></b>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Vermelho</b></div>
+					<div class="block_img_pot">
+						<img src="images/vermelho.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="vermelho_comprado" id="vermelho_comprado"
+								value="0"></b></li>
+					</ul>
+				</div>
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Rei</b></div>
+					<div class="block_img_pot">
+						<img src="images/rei.png" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="rei_comprado" id="rei_comprado" value="0"></b></li>
+					</ul>
+				</div>
+				<div class="col-sm-2 block_pot">
+					<div class="bird-title"><b>Especial</b></div>
+					<div class="block_img_pot">
+						<img src="images/especial.jpg" alt="">
+					</div>
+					<ul class="block_ul_pot">
+						<li>Produtividade: <br><b>1 por hora</b></li>
+						<li>Comprado: <input type="number" name="especial_comprado" id="especial_comprado"
+								value="0"></b></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-sm-">
+				<div class="card">
+					<div class="card-header">
+						Cálculos de Investimentos & Ganhos
+					</div>
+					<form action="" class="needs-validation" novalidate>
+						<div class="card-body">
+
+							<div class="form-group row">
+								<label for="data" class="col-sm-4 col-form-label">Data: </label>
+								<div class="col-sm-8">
+									<input type="date" class="form-control" id="data">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="valor_investir" class="col-sm-4 col-form-label was-validated">Investir
+									(USD): </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="valor_investir" data-type="currency">
+									<div class="invalid-feedback">
+										Campo Obrigatório.
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="ganho" class="col-sm-4 col-form-label">Ganho (USD): </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="ganho" data-type="currency">
+									<div class="invalid-feedback">
+										Campo Obrigatório.
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="tempo" class="col-sm-4 col-form-label"> Comprar a cada?</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="tempo">
+									<select class="form-control" id="tipo_tempo" name="tipo_tempo">
+										<option value="dia">Dia</option>
+										<option value="hora">Hora</option>
+									</select>
+									<div class="invalid-feedback">
+										Campo Obrigatório.
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="trocar_retirada">
+										<label class="form-check-label" for="trocar_retirada">
+											Trocar retirada/compra (+20%)
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<button id="calcular" type="button" class="btn btn-primary text-white">Calcular</button>
+								<div id="carregar"></div>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<table border="1px" style="border-collapse: collapse;">
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>
+					<th colspan="9">Pássaros Comprados</th>
+					<th></th>
+					<th colspan="4">Retirada/Dia</th>
+					<th colspan="2">Retirada Acumulada</th>
+					<th colspan="2">Compra/Dia</th>
+				</tr>
+				<tr>
+					<th>Dia</th>
+					<th>Dia-Comprar</th>
+					<th>Data</th>
+					<th>Be</th>
+					<th>Ve</th>
+					<th>Am</th>
+					<th>Ca</th>
+					<th>Az</th>
+					<th>Ve</th>
+					<th>Re</th>
+					<th>Es</th>
+					<th>Total<span>?</span></th>
+					<th>Moedas/Dia</th>
+					<th>Moedas</th>
+					<th>$</th>
+					<th>EURO</th>
+					<th>Trocado</th>
+					<th>Moedas</th>
+					<th>$</th>
+					<th>Moedas</th>
+					<th>C + R<span>?</span></th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mustache.js"></script>
+	<script src="js/currency.js"></script>
+	<script src="js/formatcurrency.js"></script>
+	<script src="js/sweetalert2.min.js"></script>
+	<script src="js/funcoes.js"></script>
+	<script src="js/sonic.js"></script>
+	<script src="js/carregar.js"></script>
+
+	<script id="template" type="text/template">
+		<div class="card m-2" style="background:#cfe5f6;">
+			<div class="row p-2  align-items-center">
+				<div class="col-2" align="center">
+					<img style="margin-top: 0px;width: 87px;" src="{{img}}">
+				</div>
+				<div class="col-10">
+					<div>Pássaro: {{passaro}}</div>
+					<div>Produtividade: {{mh}}</div>
+					<div>Custo:  {{custo}}</div>
+					<div>Comprados:  {{mh}}</div>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script>
+
+		$(document).ready(function () {
+			$('#data').val(formatDate(new Date().toDateString()));
+		}).on('click', '#calcular', async function () {
+			await Calcular();
+		});
+
+		$("input[data-type='currency']").on({
+			keyup: function () {
+				formatCurrency($(this));
+			},
+			blur: function () {
+				formatCurrency($(this), "blur");
+			}
+		});
+
+		function botaoEsperar(esperar = true) {
+			if (esperar) {
+				$('#calcular').prop('disabled', true);
+				$('#calcular').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>');
+				$('#calcular').text('Calculando...');
+			} else {
+				$('#calcular').prop('disabled', false);
+				$('#calcular').html('Calcular');
+			}
+		}
+
+		async function Calcular() {
+
+
+
+			var dados =
+			{
+				valor: $('#valor_investir').val(),
+				ganho: $('#ganho').val(),
+				tempo: $('#tempo').val(),
+				tipoTempo: $('#tipo_tempo').val(),
+				troca: $('#trocar_retirada').prop("checked") ? true : false,
+				data: $('#data').val(),
+				passaros_em_stock: {
+					bege: parseInt($("#bege_comprado").val()),
+					verde: parseInt($("#verde_comprado").val()),
+					amarelo: parseInt($("#amarelo_comprado").val()),
+					castanho: parseInt($("#castanho_comprado").val()),
+					azul: parseInt($("#azul_comprado").val()),
+					vermelho: parseInt($("#vermelho_comprado").val()),
+					rei: parseInt($("#rei_comprado").val()),
+					especial: parseInt($("#especial_comprado").val())
+				},
+			};
+
+			if (!Validar(dados)) return;
+
+			// botaoEsperar();
+
+			//Adicionando o LOADING
+			$('#carregar').html(getAjaxLoading());
+
+			let ganhos_total = 0;
+			let resultado_acumulado = [];
+
+			while (parseFloat(ganhos_total) < parseFloat(dados.ganho)) {
+				var resultado = retornar_menor_resultado(dados);
+				resultado_acumulado.push(resultado);
+
+				dados.valor = 0;
+				dados.ganho = $('#ganho').val();
+				dados.tempo = $('#tempo').val();
+				dados.tipoTempo = $('#tipo_tempo').val();
+				dados.troca = $('#trocar_retirada').prop("checked") ? true : false;
+				dados.data = resultado[resultado.length - 1].data;
+				dados.passaros_em_stock.bege = resultado[resultado.length - 1].bege;
+				dados.passaros_em_stock.verde = resultado[resultado.length - 1].verde;
+				dados.passaros_em_stock.amarelo = resultado[resultado.length - 1].amarelo;
+				dados.passaros_em_stock.castanho = resultado[resultado.length - 1].castanho;
+				dados.passaros_em_stock.azul = resultado[resultado.length - 1].azul;
+				dados.passaros_em_stock.vermelho = resultado[resultado.length - 1].vermelho;
+				dados.passaros_em_stock.rei = resultado[resultado.length - 1].rei;
+				dados.passaros_em_stock.especial = resultado[resultado.length - 1].especial;
+
+				ganhos_total = resultado[resultado.length - 1].usd;
+
+			};
+
+			// setTimeout((resultado_acumulado) => {
+				listar_passaros(resultado_acumulado);
+			// }, 2000, resultado_acumulado);
+
+			// botaoEsperar(false);
+
+			//Removendo o LOADING
+			$('#carregar').html("");
+
+		}
+
+		function retornar_ate_o_dia_de_compra(dia_compra, passaros) {
+			let passaros_comprados = [];
+			$(passaros).each(function (index, passaro) {
+				if (dia_compra >= passaro.dia) {
+					passaros_comprados.push(passaro);
+					return true;
+				}
+				return false;
+			});
+			return passaros_comprados;
+		}
+
+		function retornar_menor_resultado(dados) {
+			let resultrado_guaddado = [];
+			for (let index = 1; index <= 31; index++) {
+				var resultado = CalcularLucro(dados.valor, dados.ganho, index, dados.tipoTempo, dados.troca, dados.data, dados.passaros_em_stock);
+
+				resultrado_guaddado.push({
+					'cada_dia': index,
+					'total_dias': resultado[resultado.length - 1]['dia'],
+					'resultado': resultado
+				});
+
+			}
+
+			var menor_dia = resultrado_guaddado.reduce(function (a, b) {
+				return a.total_dias < b.total_dias ? a : b;
+			});
+
+			var menor_resultado = retornar_ate_o_dia_de_compra(menor_dia.cada_dia + 1, menor_dia.resultado);
+
+			return menor_resultado;
+
+		}
+
+		function Validar(dados) {
+			$('.is-invalid').removeClass('is-invalid');
+
+			var valido = true;
+			if (dados.valor == 0 && !ExistePassarosEmStock(dados.passaros_em_stock)) {
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: 'Não pode fazer nehum cálculo se não possui pássaro em stock, ou não informa um valor de investimento.!',
+				});
+				valido = false;
+			}
+
+			if (dados.ganho == 0) {
+				$('#ganho').addClass('is-invalid');
+				valido = false;
+			}
+
+			if (dados.tempo == 0) {
+				$('#tempo').addClass('is-invalid');
+				valido = false;
+			}
+
+			return valido;
+		}
+
+		function listar_passaros(data) {
+
+			$("#tbody").html("");
+
+			let dia = 0;
+			let negritar = false;
+			$(data).each(function (index, resultado) {
+
+				$(resultado).each(function (index, value) {
+					// setTimeout((dia, negritar, resultado, value) => {
+						dia++;
+						negritar = resultado.length - 1 == index ? true : false;
+						var row =
+							"<tr " + (negritar ? 'class="negrito"' : '') + ">" +
+							"<td scope='row'>" + dia + "</td>" +
+							"<td scope='row'>" + value.dia + "</td>" +
+							"<td style='width:100px'>" + value.data + "</td>" +
+							"<td>" + value.bege + "</td>" +
+							"<td>" + value.verde + "</td>" +
+							"<td>" + value.amarelo + "</td>" +
+							"<td>" + value.castanho + "</td>" +
+							"<td>" + value.azul + "</td>" +
+							"<td>" + value.vermelho + "</td>" +
+							"<td>" + value.rei + "</td>" +
+							"<td>" + value.especial + "</td>" +
+							"<td>" + value.total + "</td>" +
+							"<td>" + value.md + "</td>" +
+							"<td>" + value.rd + "</td>" +
+							"<td>" + value.usd + "</td>" +
+							"<td>" + value.euro + "</td>" +
+							"<td>" + value.trocado + "</td>" +
+							"<td>" + value.retirada_actual + "</td>" +
+							"<td>" + value.retirada_actual_usd + "</td>" +
+							"<td>" + value.cd + "</td>" +
+							"<td>" + value.cdtroca + "</td>" +
+							"</tr>";
+
+						$("#tbody").append(row);
+
+						negritar = false;
+					// }, index * 1000, dia, negritar, resultado, value);
+
+				});
+			});
+
+
+		}
+
+		function Listar() {
+			$.each(passaros, function (index, value) {
+				var dados = { "passaro": index, "mh": value.mh, "custo": value.custo, "img": value.img };
+				var template = $('#template').html();
+				$("#passaros").append(Mustache.render(template, dados));
+			});
+		}
+
+	</script>
+</body>
+
+</html>
