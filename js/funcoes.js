@@ -350,22 +350,22 @@ function formatDate(date) {
 function ExistePassarosEmStock(passaros_em_stock = {}) {
     var passaros = Object.keys(passaros_em_stock);
     var contar = 0;
-    var exite = true;
+    var existe = true;
     if (passaros.length == 0) return false;
 
     $(passaros).each(function (index, value) {
         if (passaros_em_stock[value] <= 0) {
             contar++;
         } else {
-            exite = true;
+            existe = true;
             return;
         }
 
         if (passaros.length == contar) {
-            exite = false;
+            existe = false;
             return;
         };
     });
 
-    return exite;
+    return existe;
 }

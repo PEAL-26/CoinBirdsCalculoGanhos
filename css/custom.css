@@ -58,6 +58,10 @@ body {
     font-weight: 600 !important;
 }
 
+.bg-castanho {
+    background: #F6E7BB;
+}
+
 .block_img_pot {
     border: 1px solid rgb(204, 185, 140);
     background: #F6E7BB;
@@ -359,3 +363,11 @@ a.cor-castanha:hover {
     padding-right: 5px;
     border-radius: 5px;
 } */
+
+.hr-menu {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #fff9ec;
+    height: 1px;
+}

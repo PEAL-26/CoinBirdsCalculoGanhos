@@ -41,26 +41,25 @@
 								Campo Obrigatório.
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="calcular-investimento">
-								<label class="form-check-label" for="calcular-investimento">
+								<input class="form-check-input" type="checkbox" id="calcular_investimento">
+								<label class="form-check-label" for="calcular_investimento">
 									<i class="fa fa-solid fa-hand-pointer"></i> Calcular investimento com esse
-									ganho.
+									ganho. <span class="bg-badge-bird">?</span>
 								</label>
 							</div>
 						</div>
-
-						<!-- 										
-										<div class="mb-3">
-											<label for="ganho" class="form-label">Dinheiro</label>
-											<select class="form-control" id="tipo_tempo" name="tipo_tempo">
-												<option value="dia">Dia</option>
-												<option value="hora">Hora</option>
-											</select>
-										</div> -->
+						<!--tempo_ganho  -->
+						<div class="mb-3 tempo-ganho-investimento" >
+							<label for="tempo_ganho_investimento" class="form-label">Tempo de ganho do investimento <span class="bg-badge-bird">?</span> :</label>
+							<input type="number" class="form-control" id="tempo_ganho_investimento" min="0" value="0">
+							<div class="invalid-feedback">
+								Campo Obrigatório.
+							</div>
+						</div>
 
 						<div class="mb-3">
 							<label for="tempo" class="form-label">Período de compra <span class="bg-badge-bird">?</span></label>
-							<input type="text" class="form-control mb-1" id="tempo" value="0">
+							<input type="number" class="form-control mb-1" id="tempo" min="0" value="0">
 							<select class="form-control" id="tipo_tempo" name="tipo_tempo">
 								<option value="dia">Dia(s)</option>
 								<option value="hora">Hora(s)</option>
@@ -77,16 +76,16 @@
 
 				<div class="col-sm-12 col-md-12 col-lg-6">
 					<div class="card-body d-flex flex-column">
-						<div class="row justify-content-between">
+						<div class="row  d-inline align-middle mb-1">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/bege.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="bege_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -96,16 +95,17 @@
 								<!-- Quantidade de Pássaro -->
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle mb-1">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/verde.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="verde_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -114,16 +114,17 @@
 								</span>
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/amarelo.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="amarelo_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -132,16 +133,17 @@
 								</span>
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/castanho.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="castanho_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -150,16 +152,17 @@
 								</span>
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/azul.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="azul_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -168,16 +171,17 @@
 								</span>
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/vermelho.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="vermelho_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -186,16 +190,17 @@
 								</span>
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/rei.png" alt="">
 								</div>
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="rei_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -204,20 +209,17 @@
 								</span>
 							</div>
 						</div>
-						<div class="row justify-content-between">
+						<!-- <hr class="hr-menu"> -->
+						<div class="row d-inline align-middle">
 							<div class="col-4">
 								<div class="block_img_pot">
 									<img src="images/especial.png" alt="">
 								</div>
-								<!-- <div class="">
-											Produtividade: <br></b><b>1 por hora</b>
-											Custo:
-										</div> -->
 							</div>
-							<div class="col-8 text-center">
+							<div class="col-8 text-center float-right">
 								<div class="number-input">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number">
+									<input class="quantity" min="0" name="quantity" value="0" type="number" id="especial_comprado">
 									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
 								</div>
 								<br>
@@ -306,10 +308,13 @@
 		<!-- Tabela de resultado -->
 		<div class="silver-bk mt-4">
 			<div class="block_name">
-
+				<p class="text-center"><b>Resultado</b></p>
+				<b>Ganhos diários:</b> <span id="ganhos-diarios">0</span>
+				| <b>Dias Totais:</b> <span id="total-dias">0</span>
+				| <b>Pássaros Totais:</b> <span id="ganhos-totais">0</span>
+				| <b>Data Inicial:</b> <span id="ganhos-totais">0</span>
+				| <b>Data Final:</b> <span id="ganhos-totais">0</span>
 			</div>
-
-
 
 
 		</div>
