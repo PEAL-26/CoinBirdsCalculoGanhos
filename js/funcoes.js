@@ -1,4 +1,4 @@
-const passaros = {
+const PASSAROS = {
     "bege": { "mh": 1, "custo": 35.00, "cor": '#AD9079', "img": 'images/bege.png' },
     "verde": { "mh": 5, "custo": 150.00, "cor": '#447E3C', "img": 'images/verde.png' },
     "amarelo": { "mh": 55, "custo": 1500.00, "cor": '#E8B621', "img": 'images/amarelo.png' },
@@ -16,14 +16,14 @@ const percentagem_retirada = 0.30,
     valor_minimo_compra = 35,
     minimo_troca_retirada = 100;
 
-function ConverterMoedasPorDollar(usd) {
+function ConverterDollarEmMoedas(usd) {
     moedas = moedas_por_dollar * usd;
     return Math.round(moedas, 0);
 }
 
 function E_Passaro(passaro) {
     var e_passaro = false;
-    $.each(passaros, function (index, value) {
+    $.each(PASSAROS, function (index, value) {
         if (index == passaro) {
             e_passaro = true;
             return;
@@ -36,7 +36,7 @@ function E_Passaro(passaro) {
 function CalcularMoedasPorPassaro(passaro, qtd, tipo_tempo = 'hora', qtd_tempo = 1) {
     if (!E_Passaro(passaro)) return 0;
 
-    moedas = passaros[passaro]["mh"] * qtd;
+    moedas = PASSAROS[passaro]["mh"] * qtd;
 
     if (tipo_tempo == 'hora') {
         resultado = moedas * qtd_tempo;
@@ -62,7 +62,7 @@ function CalcularCompraPorDia(moeda, dia) {
 function CalcularCompraPorPassaro(passaro, qtd, tipo_tempo = 'hora', qtd_tempo = 1) {
     if (!E_Passaro(passaro)) return 0;
 
-    moedas = passaros[passaro]["mh"] * qtd;
+    moedas = PASSAROS[passaro]["mh"] * qtd;
 
     if (tipo_tempo == 'hora') {
         resultado = CalcularCompraPorHora(moedas, qtd_tempo);
@@ -76,7 +76,7 @@ function CalcularCompraPorPassaro(passaro, qtd, tipo_tempo = 'hora', qtd_tempo =
 function CalcularRetiradaPorPassaro(passaro, qtd, tipo_tempo = 'hora', qtd_tempo = 1) {
     if (!E_Passaro(passaro)) return 0;
 
-    moedas = passaros[passaro]["mh"] * qtd;
+    moedas = PASSAROS[passaro]["mh"] * qtd;
 
     if (tipo_tempo == 'hora') {
         resultado = CalcularRetiradaPorHora(moedas, qtd_tempo);
@@ -110,7 +110,7 @@ function CalcularRetiradaEURO(moeda) {
 function CalcularLucro(valor_investir, ganho, qtd_tempo = 1, tipo_tempo = 'hora', trocar_retirada = false, data = new Date, passaros_em_stock = {}) {
 
     var tempo = 0,
-        moedas_compra = ConverterMoedasPorDollar(valor_investir),
+        moedas_compra = ConverterDollarEmMoedas(valor_investir),
         retirada_usd = 0,
         passaros_comprados = {},
         tempo_investimento = qtd_tempo,
@@ -241,7 +241,7 @@ function ComprarPassaros(moedas) {
     passaros_comprados = [];
 
     for (i = _passaros.length - 1; i >= 0; i--) {
-        custo = passaros[_passaros[i]]['custo'];
+        custo = PASSAROS[_passaros[i]]['custo'];
         if (custo <= 0) continue;
 
         saldo_anterior = saldo;
@@ -271,7 +271,7 @@ function CalcularValorPassaros(_passaros) {
     var passaros_comprados = [];
 
     $.each(Object.keys(_passaros), function (index, passaro) {
-        custo = passaros[passaro]['custo'];
+        custo = PASSAROS[passaro]['custo'];
         qtd = _passaros[passaro];
 
         if (custo <= 0 || qtd <= 0) return;
