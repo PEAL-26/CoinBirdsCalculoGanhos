@@ -15,108 +15,83 @@
         <div class="row justify-content-center">
             <div class="col-12 row justify-content-center mb-3">
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/bege.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Bege</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/bege.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_verde">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $begeComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $begeComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/verde.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Verde</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/verde.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_verde">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $verdeComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $verdeComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/amarelo.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Amarelo</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/amarelo.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_amarelo">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $amareloComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $amareloComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/castanho.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Castanho</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/castanho.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_castanho">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $castanhoComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $castanhoComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/azul.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Azul</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/azul.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_azul">0</b></b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $azulComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $azulComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/vermelho.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Vermelho</b></div>
-
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/vermelho.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_vermelho">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $vermelhoComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $vermelhoComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/rei.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Rei</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/rei.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_rei">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $reiComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $reiComprado['comprado']; ?></b></p>
                     </div>
                 </div>
                 <div class="col-sm-5 block_pot">
+                    <div class="block_img_pot">
+                        <img src="images/especial.png" alt="">
+                    </div>
                     <div class="bird-title"><b>Especial</b></div>
-                    <div class="block_pot_conteudo">
-                        <div class="block_img_pot">
-                            <img src="images/especial.png" alt="">
-                        </div>
-                        <ul class="block_ul_pot">
-                            <li>Produtividade: <br><b>1 por hora</b></li>
-                            <li>Custo: </li>
-                            <li>Comprado: <b class="stock_especial">0</b></li>
-                        </ul>
+                    <div class="bird-descricao">
+                        <p>Produtividade: <b><?= $especialComprado['moeda_hora']; ?> por hora</b></p>
+                        <p>Comprado: <b class="stock_azul"><?= $especialComprado['comprado']; ?></b></p>
                     </div>
                 </div>
             </div>

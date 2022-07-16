@@ -14,6 +14,282 @@
 			</div>
 
 			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-12 col-lg-6">
+					<div class="card-body d-flex flex-column">
+						<!-- Bege -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/bege.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Bege
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-bege">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-bege">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-bege">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="bege_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Verde -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/verde.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Verde
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-verde">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-verde">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-verde">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="verde_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Amarelo -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/amarelo.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Amarelo
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-amarelo">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-amarelo">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-amarelo">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="amarelo_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Castanho -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/castanho.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Castanho
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-castanho">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-castanho">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-castanho">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="castanho_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Azul -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/azul.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Azul
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-azul">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-azul">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-azul">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="azul_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Vermelho -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/vermelho.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Vermelho
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-vermelho">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-vermelho">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-vermelho">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="vermelho_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Rei -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/rei.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Rei
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-rei">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-rei">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-rei">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="rei_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Especial -->
+						<div class="row  d-inline align-middle mb-1">
+							<table class="fr-block">
+								<tbody>
+									<tr>
+										<td>
+											<img class="bird" src="images/especial.png">
+										</td>
+										<td>
+											<div class="fr-te-gr-title">
+												Especial
+											</div>
+											<div class="fr-te-gr">
+												Produtividade: <span class="desc-produtividade-especial">1\h</span>
+											</div>
+											<div class="fr-te-gr">
+												Custo: <span class="desc-custo-especial">35 moedas</span>
+											</div>
+											<div class="fr-te-gr">
+												Investimento: <span class="investimento-especial">0</span>
+											</div>
+										</td>
+										<td class="text-center">
+											<div class="number-input">
+												<button class="minus input-number-minus"></button>
+												<input min="0" value="0" type="number" id="especial_comprado">
+												<button class="plus input-number-plus"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
 				<div class="col-sm-12 col-md-12 col-lg-6 needs-validation" novalidate>
 					<div class="card-body">
 
@@ -48,8 +324,8 @@
 								</label>
 							</div>
 						</div>
-						<!--tempo_ganho  -->
-						<div class="mb-3 tempo-ganho-investimento" >
+
+						<div class="mb-3 tempo-ganho-investimento">
 							<label for="tempo_ganho_investimento" class="form-label">Tempo de ganho do investimento <span class="bg-badge-bird">?</span> :</label>
 							<input type="number" class="form-control" id="tempo_ganho_investimento" min="0" value="0">
 							<div class="invalid-feedback">
@@ -71,169 +347,12 @@
 								</label>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-12 col-lg-6">
-					<div class="card-body d-flex flex-column">
-						<div class="row  d-inline align-middle mb-1">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/bege.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="bege_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-bege">0</span>
-								</span>
-								<!-- Quantidade de Pássaro -->
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle mb-1">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/verde.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="verde_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-verde">0</span>
-								</span>
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/amarelo.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="amarelo_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-amarelo">0</span>
-								</span>
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/castanho.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="castanho_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-castanho">0</span>
-								</span>
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/azul.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="azul_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-azul">0</span>
-								</span>
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/vermelho.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="vermelho_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-vermelho">0</span>
-								</span>
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/rei.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="rei_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-rei">0</span>
-								</span>
-							</div>
-						</div>
-						<!-- <hr class="hr-menu"> -->
-						<div class="row d-inline align-middle">
-							<div class="col-4">
-								<div class="block_img_pot">
-									<img src="images/especial.png" alt="">
-								</div>
-							</div>
-							<div class="col-8 text-center float-right">
-								<div class="number-input">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-									<input class="quantity" min="0" name="quantity" value="0" type="number" id="especial_comprado">
-									<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-								</div>
-								<br>
-								<span class="investimento">
-									<span id="investimento-especial">0</span>
-								</span>
-							</div>
+						<div class="text-center">
+							<button id="calcular" type="button" class="botao-principal">Calcular</button>
+							<div id="carregar"></div>
 						</div>
 					</div>
-				</div>
-
-				<div class="text-center">
-					<button id="calcular" type="button" class="botao-principal">Calcular</button>
-					<div id="carregar"></div>
 				</div>
 			</div>
 
@@ -317,6 +436,11 @@
 			</div>
 
 
+
+			<div class="text-center">
+				<button id="guardar-calculo" type="button" class="botao-principal">Guardar Cálculo</button>
+				<div id="carregar"></div>
+			</div>
 		</div>
 	</div>
 </div>

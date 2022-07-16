@@ -1,3 +1,5 @@
+<?php include 'database/conexao.php'; ?>
+
 <!doctype html>
 <html lang="pt">
 

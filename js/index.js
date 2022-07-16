@@ -20,8 +20,13 @@ $('.tempo-ganho-investimento').hide();
 
 $(document).ready(function () {
     $('#data').val(formatDate(new Date().toDateString()));
+    descreverPassaros();
 }).on('click', '#calcular', async function () {
     await Calcular();
+}).on('click', '.input-number-minus', function () {
+    this.parentNode.querySelector('input[type=number]').stepDown()
+}).on('click', '.input-number-plus', function () {
+    this.parentNode.querySelector('input[type=number]').stepUp()
 }).on('input', '#valor_investir', function () {
     $('#converter-investimento-moeda').text('');
     let valor = $(this).val().replaceAll(',', '');
@@ -69,6 +74,7 @@ async function Calcular() {
         },
     };
 
+    dados.passaros_em_stock = await adicionarComprados(dados.passaros_em_stock);
     if (!validar(dados)) return;
 
     calculando = true;
@@ -78,7 +84,6 @@ async function Calcular() {
     } else {
         resultado = await calcularGanhos(dados);
     }
-
 
     console.log(resultado);
 
@@ -92,9 +97,12 @@ async function calcularGanhos(dados) {
     return new Promise(resolve => {
         let ganhos_total = 0;
         let resultado_acumulado = [];
+        let cont = 0;
         while (parseFloat(ganhos_total) < parseFloat(dados.ganho)) {
             var resultado = calcularMenorTempoGanho(dados);
             resultado_acumulado.push(resultado);
+
+            if (+cont == 1) break;
 
             dados.valor = 0;
             dados.ganho = $('#ganho').val();
@@ -160,6 +168,25 @@ function proximoDiaCompra(dia_compra, passaros) {
     return passaros_comprados;
 }
 
+async function adicionarComprados(stock) {
+    var resultado = await $.get("database/conexao.php?operacao=buscar-passaro-comprados");
+
+    if (resultado) {
+        var passaros = JSON.parse(resultado);
+        return {
+            bege: parseInt(stock.bege) + parseInt(passaros[0].comprado),
+            verde: parseInt(stock.verde) + parseInt(passaros[1].comprado),
+            amarelo: parseInt(stock.amarelo) + parseInt(passaros[2].comprado),
+            castanho: parseInt(stock.castanho) + parseInt(passaros[3].comprado),
+            azul: parseInt(stock.azul) + parseInt(passaros[4].comprado),
+            vermelho: parseInt(stock.vermelho) + parseInt(passaros[5].comprado),
+            rei: parseInt(stock.rei) + parseInt(passaros[6].comprado),
+            especial: parseInt(stock.especial) + parseInt(passaros[7].comprado)
+        };
+    }
+
+}
+
 function validar(dados) {
     $('.is-invalid').removeClass('is-invalid');
 
@@ -208,28 +235,28 @@ function calcularNumeroPassarosPorInvestimento(investimento) {
 
 function QuantidadePassarosInvestimento(passaro, qtd) {
     if (passaro == 'bege')
-        $('#investimento-bege').text(qtd);
+        $('.investimento-bege').text(qtd);
 
     if (passaro == 'verde')
-        $('#investimento-verde').text(qtd);
+        $('.investimento-verde').text(qtd);
 
     if (passaro == 'amarelo')
-        $('#investimento-amarelo').text(qtd);
+        $('.investimento-amarelo').text(qtd);
 
     if (passaro == 'castanho')
-        $('#investimento-castanho').text(qtd);
+        $('.investimento-castanho').text(qtd);
 
     if (passaro == 'azul')
-        $('#investimento-azul').text(qtd);
+        $('.investimento-azul').text(qtd);
 
     if (passaro == 'vermelho')
-        $('#investimento-vermelho').text(qtd);
+        $('.investimento-vermelho').text(qtd);
 
     if (passaro == 'rei')
-        $('#investimento-rei').text(qtd);
+        $('.investimento-rei').text(qtd);
 
     if (passaro == 'especial')
-        $('#investimento-especial').text(qtd);
+        $('.investimento-especial').text(qtd);
 }
 
 function limparaQuantidadePassarosInvetimento() {
@@ -309,5 +336,14 @@ function Listar() {
         };
         var template = $('#template').html();
         $("#passaros").append(Mustache.render(template, dados));
+    });
+}
+
+function descreverPassaros() {
+    $.each(PASSAROS, function (passaro, value) {
+        let produtividade = `.desc-produtividade-${passaro}`;
+        let custo = `.desc-custo-${passaro}`;
+        $(produtividade).text(`${value.mh} por hora`);
+        $(custo).text(`${value.custo} Moedas`);
     });
 }
